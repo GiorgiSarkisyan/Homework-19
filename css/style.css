@@ -1,0 +1,122 @@
+/* GLOBAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+/* HEADER STYLES */
+.wrapper{
+    height: 100vh;
+}
+.main-section-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px 0px 140px;
+    height: 15%;
+}
+.header-logo{
+    margin-top: 35px;
+}
+.header-logo img{
+    width: 44px;
+    height: 44px;
+}
+.header-logo span{
+    vertical-align: bottom;
+    font-size: 40px;
+    line-height: 60px;
+    margin-left: 14px;
+}
+.header-nav{
+    margin-top: 45px;
+}
+.header-nav ul{
+    display: flex;
+    gap: 20px   ;
+}
+.header-nav li{
+    text-align: center;
+    width: 120px;
+    height: 42px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+.header-nav li:hover{
+    border-radius: 30px;
+    background-color:#087DBF;
+}
+/* SECTION STYLES */
+.main-section{
+    height: 65%;
+}
+.middle-content{
+    padding: 0 188px 0 140px;
+}
+.main-section-info{
+    padding-top: 40px;
+    margin-top:66px;
+    display: flex;
+}
+.main-section-title{
+    width: 900px;
+    height: 200px;
+    font-size: 45px;
+    line-height: 86px;
+    color: #087DBF;
+}
+.main-section-options{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.box-title{
+    margin:  0px 0px 10px 0px;
+    width: 400px; 
+    height: 48px;
+    font-size: 25px;
+    line-height: 48px;
+}
+.box-paragraph{
+    font-size: 20px;
+}
+.box-get-started-option{
+    color: #087DBF;
+    margin-top: 20px;
+}
+.box-get-started-option a{
+    text-decoration: underline;
+    font-size: 25px;
+}
+.main-section-footer{
+    height: 13%;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.main-section-footer ul{
+    display:flex;
+    gap: 20px;
+}
+.footer-company-rights img{
+    width: 24px;
+    height: 24px;
+}
+.footer-company-rights{
+    display: flex;
+    padding-left: 50px;
+}
+.footer-company-rights p{
+    margin-left: 10px;
+}
+.footer-nav{
+    margin-right: 100px;
+}
