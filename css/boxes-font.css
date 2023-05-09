@@ -1,0 +1,9 @@
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400');
+@font-face {
+    font-family: 'Inter700';
+    src: url(../font/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter300';
+    src: url(../font/Inter-Light.ttf);
+}
