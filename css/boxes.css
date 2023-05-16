@@ -13,7 +13,8 @@ a{
     color: inherit;
 }
 .middle-content{
-    margin-left: 146px;
+    max-width: 1650px;
+    margin: 0 auto;
 }
 input:checked{
     border: none;
@@ -22,19 +23,22 @@ input:checked{
 header{
     background: white;
     position: fixed;
-    width: 1920px;
+    width: 100%;
     height: 126px;
+    top: 0px;
     font-family: 'Inter700';
     border-bottom: 1px solid black;
 }
 .header-content{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .logo{
     margin-left: 140px;
     margin-top: 40px;
-
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 .logo img{
     width: 44px;
@@ -58,39 +62,40 @@ header{
 }
 /* heros section */
 .heros-section{
-    padding-top: 176px;
+    margin-top: 176px;
 }
 .section-form{
-    width: 1600px;
+    width: 100%;
     margin-bottom: 50px;
 }
 input{
-    width: 900px;
-    margin-left: 36px;
+    width: 100%;
+    margin-left: 80px;
     height: 83px;
     outline: none;
     border-style: none solid none none;
     font-size: 32px;
-    font-family: 'FontAwesome';
+}
+.section-boxes{
+    display: grid;
+    grid-template-columns:400px 400px 400px 400px;
+    grid-template-rows: 460px 460px 460px 460px;
+    grid-gap: 20px;
+    margin-bottom: 50px;
 }
 form{
-    width: 1587px;
+    width: 100%;
     height: 87px;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 62px;
+    display: grid;
+    grid-template-columns: 65% 30% 5%
 }
-.section-boxes-row{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-select{
-    margin-left: -5px;
-    width: 570px;
-    height:85px;
-    vertical-align: top;
+select{ 
+    width: 100%;
+    height: 100%;
     font-size: 32px;
     font-family: 'Inter300';
     border-style: none;
@@ -99,85 +104,125 @@ select{
 form button{
     background-color: white;
     border: none;
+    width: 10%;
     margin-left: 15px;
 }
+/* box styles */
 .section-box{
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 30px;
-    width: 394px;
-    height: 460px;
-}
-.box-image img{
-    width: 340px;
-    height: 284px;
-    margin-left: 27px;
-    margin-top: 15px;
+    width: 100%;
+    height: 100%;
 }
 .box-content{
-    margin-top: 15px;
-    margin-left: 50px;
-}
-.box-deal{
-    display:flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px 20px 80px;
+    padding: 0 25px 0 25px;
 }
 .box-person{
     font-family: 'Inter700';
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
+    white-space: nowrap;
 }
-.box-deal img{
-    margin-left: 105px;
+.box-deal{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20%;
+    text-align: left;
+    grid-column: 1/3;
 }
 .box-person-value{
-    margin-left: 5px;
     font-family: 'Inter300';
     font-size: 15px;
-    font-weight: 300;
-    line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
+    white-space: nowrap;
+}
+
+.box-person-value-text span{
+    font-family: 'Inter700';
+    font-size: 16px;
 }
 .box-rating-profession{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20%;
+    grid-column: 1/3;
+    text-align: left;
 }
 .box-profession{
+    grid-column: 1/2;
     font-family: 'Inter300';
     font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-
 }
 .box-rating{
+    grid-column: 2/3;
     display: flex;
-    margin-left: 128px;
+    flex-direction: row;
 }
-.box-rating p{
-    margin-top: 4px;
-    font-family: 'Inter700';
+.box-rating-overall{
+    font-family: 'Inter400';
+}
+.box-send-button{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 .box-send-button button{
-    margin-top: 30px;
-    margin-left: 30px;
     width: 225px;
     height: 50px;
-    border-radius: 25px;
     background: #087DBF;
+    color: white;
+    border-radius: 25px;
     border: none;
 }
 .box-send-button span{
-    vertical-align: top;
-    color: white;
-    font-family: 'inter700';
+    font-family: 'Inter700';
     font-size: 20px;
-    line-height:24.2px;
-    margin-bottom: 15px;
+    line-height: 24px;
+    vertical-align: middle;
 }
 .box-send-button img{
-    margin-right: 10px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+.box-image img{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px 0 20px;
+}
+@media (max-width: 1660px){
+    .section-boxes{
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(4, 360px);
+        justify-content: center;
+    }
+    .box-deal{
+        grid-gap: 0;
+    }
+}
+@media (max-width: 1280px){
+    .section-boxes{
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: repeat(6, 360px);
+    }
+}
+@media (max-width: 1024px){
+    .section-boxes{
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(6, 360px);
+    }
+    .logo{
+        margin-left: 40px;
+    }
 }
