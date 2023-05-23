@@ -11,11 +11,11 @@
     src: url(../Font/poppins-Bold.ttf);
 }
 .poppins-light{
-    font-family: 'PoppinsLight';
+    font-family: 'poppinsLight';
 }
 .poppins-regular{
-    font-family: 'PoppinsRegular';
+    font-family: 'poppinsRegular';
 }
 .poppins-bold{
-    font-family: 'PoppinsBold';
+    font-family: 'poppinsBold';
 }

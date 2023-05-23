@@ -25,7 +25,7 @@ header{
     width: 100%;
     height: 126px;
     top: 0px;
-    font-family: 'Inter700';
+    font-family: 'inter700';
     border-bottom: 1px solid black;
 }
 .header-content{
@@ -96,7 +96,7 @@ select{
     width: 100%;
     height: 100%;
     font-size: 32px;
-    font-family: 'Inter300';
+    font-family: 'inter300';
     border-style: none;
     border: 0cm;
 }
@@ -121,7 +121,7 @@ form button{
     padding: 0 25px 0 25px;
 }
 .box-person{
-    font-family: 'Inter700';
+    font-family: 'inter700';
     font-size: 20px;
     font-weight: 700;
     line-height: 17px;
@@ -136,7 +136,7 @@ form button{
     grid-column: 1/3;
 }
 .box-person-value{
-    font-family: 'Inter300';
+    font-family: 'inter300';
     font-size: 15px;
     letter-spacing: 0em;
     text-align: left;
@@ -156,7 +156,7 @@ form button{
 }
 .box-profession{
     grid-column: 1/2;
-    font-family: 'Inter300';
+    font-family: 'inter300';
     font-size: 14px;
 }
 .box-rating{
@@ -165,7 +165,7 @@ form button{
     flex-direction: row;
 }
 .box-rating-overall{
-    font-family: 'Inter400';
+    font-family: 'inter400';
 }
 .box-send-button{
     grid-column: 1/3;
@@ -184,7 +184,7 @@ form button{
     border: none;
 }
 .box-send-button span{
-    font-family: 'Inter700';
+    font-family: 'inter700';
     font-size: 20px;
     line-height: 24px;
     vertical-align: middle;
@@ -223,12 +223,6 @@ form button{
     }
   
 }
-/* @media (max-width: 768px){
-    .section-boxes{
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(6, 360px);
-    }
-} */
 
 @media (max-width: 768px){
     .section-boxes{
